@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4eecb727-da22-4add-a020-60ec5b94d508" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/6-微服务网关 Gateway/coupon-middleware-serv/gateway-serv/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6-微服务网关 Gateway/coupon-middleware-serv/gateway-serv/src/main/java/top/mqxu/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6-微服务网关 Gateway/coupon-middleware-serv/gateway-serv/src/main/java/top/mqxu/gateway/RoutesConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6-微服务网关 Gateway/coupon-middleware-serv/gateway-serv/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6-微服务网关 Gateway/coupon-middleware-serv/gateway-serv/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/coupon-calculation-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-calculation-serv/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/src/main/java/top/lxyi/coupon/customer/feign/TemplateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/src/main/java/top/lxyi/coupon/customer/feign/TemplateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-customer-serv/coupon-customer-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-middleware-serv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-middleware-serv/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/src/main/java/top/lxyi/coupon/template/controller/CouponTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/src/main/java/top/lxyi/coupon/template/controller/CouponTemplateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/coupon-template-impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/coupon-template-serv/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2-Nacos+OpenFeign微服务通信/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_jar" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\Downloads\apache-maven-3.9.0-bin\apache-maven-3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2V6PFNOf1Cjwx5nFnaBoMVpT73K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "E:/2242-wei/cloud-coupon",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "3094b82dfd0b0208d28ec450f768c7ae",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="top.lxyi.coupon.calculation.template.impl" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CalculationApplication">
+    <configuration name="CalculationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coupon-calculation-impl" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.lxyi.coupon.calculation.CalculationApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lxyi.coupon.calculation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coupon-customer-impl" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.lxyi.coupon.customer.CustomerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lxyi.coupon.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="coupon-template-impl" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="top.lxyi.coupon.template.TemplateApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.lxyi.coupon.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CalculationApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.TemplateApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4eecb727-da22-4add-a020-60ec5b94d508" name="Changes" comment="" />
+      <created>1694153452296</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694153452296</updated>
+      <workItem from="1694153453495" duration="14202000" />
+      <workItem from="1694233228315" duration="12208000" />
+      <workItem from="1694649818421" duration="421000" />
+      <workItem from="1694650510436" duration="15000" />
+      <workItem from="1694673223037" duration="1622000" />
+      <workItem from="1694756156005" duration="610000" />
+      <workItem from="1697678642510" duration="47000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

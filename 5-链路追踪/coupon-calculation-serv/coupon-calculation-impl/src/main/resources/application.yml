@@ -1,0 +1,52 @@
+server:
+  port: 20002
+  # 在返回给页面的结果里，把错误信息添加到message里
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: coupon-calculation-serv
+
+  cloud:
+    nacos:
+      discovery:
+        #Nacos服务地址，可以配置多个，用 ,分隔
+        server-addr: http://8.130.48.205:8848
+        #注册到Nacos上的服务名称
+        service: coupon-calculation-serv
+        #客户端（各个微服务）向Nacos发送心跳的时间，单位是毫秒
+        heart-beat-interval: 5000
+        #心跳检测的超时时间，一定要大于heart-beat-interval时间
+        heart-beat-timeout: 20000
+        #元数据---可以自己随便定制
+        metadata:
+          myData: xyz3
+        #命名空间ID，进行数据隔离
+        namespace: dev
+        #两个服务如果要调用，一定要在同一个group
+        group: myGroup
+        #以下非必须，
+        register-enabled: true
+        #宕机后重启是否优先使用本地缓存
+        naming-load-cache-at-start: false
+        username: nacos
+        password: nacos
+    sleuth:
+      sampler:
+        probability: 1
+        rate: 1000
+    zipkin:
+      sender:
+        type: web
+        base-url: http://localhost:9411/
+logging:
+  level:
+    top.lxyi.coupon: debug
+
+# 开启所有management端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

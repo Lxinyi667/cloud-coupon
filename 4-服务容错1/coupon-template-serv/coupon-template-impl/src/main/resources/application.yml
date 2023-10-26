@@ -1,0 +1,75 @@
+# 项目的启动端口
+server:
+  port: 20000
+spring:
+  application:
+    # 定义项目名称
+    name: coupon-template-serv
+  datasource:
+    # mysql数据源
+    url: jdbc:mysql://127.0.0.1:3306/coupon_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    # 指定数据源DataSource类型
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接池参数配置，比如池子大小、超时时间、是否自动提交等等
+    hikari:
+      pool-name: CloudCouponHikari
+      connection-timeout: 5000
+      idle-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      max-lifetime: 60000
+      auto-commit: true
+  jpa:
+    show-sql: true
+    hibernate:
+      # 在生产环境全部为none，防止ddl结构被自动执行，破坏生产数据
+      ddl-auto: none
+    # 在日志中打印经过格式化的SQL语句
+    properties:
+      hibernate.format_sql: true
+      hibernate.show_sql: true
+    open-in-view: false
+  cloud:
+    nacos:
+      discovery:
+        #Nacos服务地址，可以配置多个，用 ,分隔
+        server-addr: localhost:8848
+        #注册到Nacos上的服务名称
+        service: coupon-template-serv
+        #客户端（各个微服务）向Nacos发送心跳的时间，单位是毫秒
+        heart-beat-interval: 5000
+        #心跳检测的超时时间，一定要大于heart-beat-interval时间
+        heart-beat-timeout: 20000
+        #元数据---可以自己随便定制
+        metadata:
+          myData: xyz
+        #命名空间ID，进行数据隔离
+        namespace: dev
+        #两个服务如果要调用，一定要在同一个group
+        group: myGroup
+        #以下非必须，
+        register-enabled: true
+        #宕机后重启是否优先使用本地缓存
+        naming-load-cache-at-start: false
+        username: nacos
+        password: nacos
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+      management:
+        endpoints:
+          web:
+            exposure:
+              include: "*"
+      datasource:
+        lxy-flow:
+          nacos:
+            server-addr: localhost:8848
+            namespace: dev
+            group-id: SENTINEL_GROUP
+            data-id: ${spring.application.name}-flow-rules
+            rule-type: flow

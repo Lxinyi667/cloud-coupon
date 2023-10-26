@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-coupon" target="18" />
+      <module name="coupon-calculation-api" target="18" />
+      <module name="coupon-calculation-impl" target="18" />
+      <module name="coupon-calculation-serv" target="18" />
+      <module name="coupon-customer-api" target="18" />
+      <module name="coupon-customer-dao" target="18" />
+      <module name="coupon-customer-impl" target="18" />
+      <module name="coupon-customer-serv" target="17" />
+      <module name="coupon-middleware" target="17" />
+      <module name="coupon-middleware-serv" target="18" />
+      <module name="coupon-template-api" target="18" />
+      <module name="coupon-template-dao" target="18" />
+      <module name="coupon-template-impl" target="18" />
+      <module name="coupon-template-serv" target="19" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="coupon-calculation-api" options="-parameters" />
+      <module name="coupon-calculation-impl" options="-parameters" />
+      <module name="coupon-calculation-serv" options="" />
+      <module name="coupon-customer-api" options="-parameters" />
+      <module name="coupon-customer-dao" options="-parameters" />
+      <module name="coupon-customer-impl" options="-parameters" />
+      <module name="coupon-customer-serv" options="" />
+      <module name="coupon-middleware-serv" options="-parameters" />
+      <module name="coupon-template-api" options="-parameters" />
+      <module name="coupon-template-dao" options="-parameters" />
+      <module name="coupon-template-impl" options="-parameters" />
+      <module name="coupon-template-serv" options="" />
+    </option>
+  </component>
+</project>

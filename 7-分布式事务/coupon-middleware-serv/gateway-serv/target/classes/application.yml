@@ -1,0 +1,44 @@
+server:
+  port: 30000
+
+spring:
+  application:
+    name: coupon-gateway-serv
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        heart-beat-interval: 5000
+        heart-beat-timeout: 15000
+        namespace: dev
+        group: myGroup
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: route-calculation
+          uri: lb://coupon-calculation-serv
+          predicates:
+            - Path=/gateway/calculator/**
+          filters:
+            - StripPrefix=1
+        - id: route-template
+          uri: lb://coupon-template-serv
+          predicates:
+            - Path=/gateway/template/**
+          filters:
+            - StripPrefix=1
+        - id: route-customer
+          uri: lb://coupon-customer-serv
+          predicates:
+            - Path=/gateway/coupon-customer/**
+          #            - After=2023-12-12T14:33:33+08:00
+          filters:
+            - StripPrefix=1
+
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080

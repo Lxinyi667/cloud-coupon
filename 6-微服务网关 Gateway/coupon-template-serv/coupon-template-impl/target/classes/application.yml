@@ -1,0 +1,38 @@
+server:
+  port: 20000
+spring:
+  application:
+    name: coupon-template-serv
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/coupon_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接池参数配置，比如大小、超时时间、是否自动提交等
+    hikari:
+      pool-name: CloudCouponHikari
+      connection-timeout: 5000
+      idle-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      max-lifetime: 60000
+      auto-commit: true
+  jpa:
+    show-sql: true
+    hibernate:
+      # 在生产环境全部为 none，防止 ddl 结构被自动执行，破坏生产数据
+      ddl-auto: none
+    # 在日志中打印经过格式化的SQL语句
+    properties:
+      hibernate.format_sql: true
+      hibernate.show_sql: true
+    open-in-view: false
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        heart-beat-interval: 5000
+        heart-beat-timeout: 15000
+        namespace: dev
+        group: myGroup

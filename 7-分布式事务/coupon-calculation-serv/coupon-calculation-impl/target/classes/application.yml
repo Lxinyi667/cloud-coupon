@@ -1,0 +1,23 @@
+server:
+  port: 20002
+
+spring:
+  application:
+    name: coupon-calculation-serv
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        # 默认就是application name，一般不用配置
+        service: coupon-calculation-serv
+        # nacos客户端向服务端发送心跳的时间间隔，时间单位其实是ms
+        heart-beat-interval: 5000
+        # 服务端没有接受到客户端心跳请求就将其设为不健康的时间间隔，默认为15s
+        heart-beat-timeout: 15000
+        namespace: dev
+        group: myGroup
+
+logging:
+  level:
+    top.mqxu.coupon: debug
+

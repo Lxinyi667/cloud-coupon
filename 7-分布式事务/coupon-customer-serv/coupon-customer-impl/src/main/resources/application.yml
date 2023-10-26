@@ -1,0 +1,56 @@
+server:
+  port: 20001
+
+spring:
+  application:
+    name: coupon-customer-serv
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/coupon_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: CloudCouponHikari
+      connection-timeout: 5000
+      idle-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+      max-lifetime: 60000
+      auto-commit: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.show_sql: true
+      hibernate.format_sql: true
+    open-in-view: false
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        service: coupon-customer-serv
+        heart-beat-interval: 5000
+        heart-beat-timeout: 15000
+        namespace: dev
+        group: myGroup
+
+logging:
+  level:
+    top.mqxu.coupon: debug
+
+seata:
+  application-id: coupon-customer-serv
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: localhost:8848
+      namespace: dev
+      group: myGroup
+  service:
+    vgroup-mapping:
+      default_tx_group: default
+
+

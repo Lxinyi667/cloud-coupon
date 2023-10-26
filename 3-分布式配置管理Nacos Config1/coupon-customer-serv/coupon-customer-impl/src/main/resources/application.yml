@@ -1,0 +1,20 @@
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: coupon-customer-serv
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        file-extension: yml
+        namespace: dev
+        group: myGroup
+        timeout: 5000
+        config-long-poll-timeout: 100000
+        config-retry-time: 2000
+        max-retry: 3
+        refresh-enabled: true
+server:
+  port: 20001

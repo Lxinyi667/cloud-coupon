@@ -1,0 +1,11 @@
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\converter\CouponConverter.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\feign\CalculationService.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\feign\TemplateService.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\loadbalance\CanaryRule.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\service\CouponCustomerService.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\loadbalance\CanaryRuleConfiguration.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\Configuration.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\controller\CouponCustomerController.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\CustomerApplication.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\service\impl\CouponCustomerServiceImpl.java
+E:\2242-wei\cloud-coupon\6-微服务网关 Gateway\coupon-customer-serv\coupon-customer-impl\src\main\java\top\mqxu\coupon\customer\constant\Constant.java
